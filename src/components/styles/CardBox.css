@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Lilita+One&display=swap');
+
+:root{
+    --orange1: rgb(164, 108, 3);
+    --orange2: rgb(255, 165, 0);
+    --white:rgb(255, 255, 255);
+}
+
+.CardBox{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto ;
+    place-items: center;
+    width: min(100%, 400px);
+    padding: 1rem 0.5rem;
+    margin: 0 auto;
+    font-family: 'Cormorant Garamond', serif;;
+    font-size: 300;
+    gap: 1rem;
+}
+
+h1{
+    padding-top:3rem ;
+    font-family: 'Lilita One', cursive;
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 400;
+    text-shadow: -1px 1px 0 var(--orange1),
+    1px 1px 0 var(--orange1),
+    2px -2px 0 var(--orange1),
+    -1px -1px 0 var(--orange1);
+}
+
+.contentCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+button{
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--orange2);
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid var(--orange1);
+    transition: background-color 1s, border 1s, color 0.5s;
+
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--orange1);
+    border: 2px solid var(--orange2);
+    color: var(--white);
+}
+
+article{
+    background-color: var(--white);
+    padding: 2rem ;
+    border-radius: 1rem;
+    color: black;
+    font-size: 1.5rem;
+}
+
+footer{
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
